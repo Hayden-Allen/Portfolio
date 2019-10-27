@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <link rel = "icon" href = "Tile.js-v4-master\assets\tile\grass.png"/>
+    <style>
+      * {
+        font-family: Arial;
+      }
+      li.card {
+        width: 300px;
+        list-style-type: square;
+      }
+      img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom: 1px solid #222222;
+      }
+      a.run:link {
+        background-color: #0033cc;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 5px;
+      }
+      a.run:visited, a.run:active {
+        text-decoration: none;
+        color: white;
+        background-color: #0011aa;
+      }
+      a.run:hover {
+        text-decoration: none;
+        color: white;
+        background-color: #0055ee;
+      }
+      a.src:link {
+        background-color: #00bb33;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 5px;
+      }
+      a.src:visited, a.src:active {
+        text-decoration: none;
+        color: white;
+        background-color: #009911;
+      }
+      a.src:hover {
+        text-decoration: none;
+        color: white;
+        background-color: #00dd55;
+      }
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+      }
+      .flex-panel {
+        margin: 15px;
+        border: 1px solid #222222;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+				transition: 0.3s;
+        border-radius: 5px;
+        background-color: #eeeeee;
+      }
+      .flex-panel:hover {
+        box-shadow: 0 16px 32px 0 rgba(0, 0, 0, .4);
+      }
+      .flex-panel-text {
+        padding-left: 5px;
+        height: 175px;
+      }
+      .flex-panel-buttons {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .fixed {
+				left: 0;
+				top: 0;
+        margin-top: 0;
+				width: 100%;
+				background-color: #222222;
+        color: white;
+				font-size = 5vw;
+				text-align: center;
+				position: fixed;
+			}
+      ::-webkit-scrollbar {
+				width: 10px;
+			}
+			::-webkit-scrollbar-track {
+				background: #ffffff;
+			}
+			::-webkit-scrollbar-thumb {
+				background: #222222;
+			}
+			::-webkit-scrollbar-thumb:hover {
+				background: #555555;
+			}
+      .top-list {
+        padding-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class = "fixed" id = "banner">H A Y D E N&nbsp;&nbsp;&nbsp;A L L E N</h1>
+
+    <div style = "margin: auto; width: 40%;">
+      <ul class = "top-list">
+        <li>
+          This is a list of my most complete JavaScript programs.
+        </li>
+        <li>
+          The source code for all of these projects can be found on my <a href = "https://github.com/Hayden-Allen?tab=repositories">GitHub</a>.
+        </li>
+        <li>
+          To go to a specific project's source code, click on the Source Code button at the bottom of that project's card.
+        </li>
+        <li>
+          To interact with the project, press the Run button.
+        </li>
+      </ul>
+    </div>
+
+    <div class = "flex-container">
+      <div class = "flex-panel">
+        <img src = "thumbnails/Tile.js-v4.png"></img>
+        <div class = "flex-panel-text">
+          <h3>Tile.js-v4</h3>
+          <ul>
+            <li class = "card">Dynamic, radial, and additive lighting</li>
+            <li class = "card">Walk through doors to travel between rooms</li>
+            <li class = "card">WASD to move, SPACE to use item, 123 to swap item</li>
+          </ul>
+        </div>
+        <div class = "flex-panel-buttons">
+          <a target = blank class = "src" href = "https://github.com/Hayden-Allen/Tile.js-v4">Source Code</a>
+          <a class = "run" href = "C:\Users\Splat\Downloads\Tile.js-v4-master\index.html">Run</a>
+        </div>
+      </div>
+      <div class = "flex-panel">
+        <img src = "thumbnails/Bounce.png"></img>
+        <div class = "flex-panel-text">
+          <h3>Bounce</h3>
+          <ul>
+            <li class = "card">Simple 2D physics simulation</li>
+            <li class = "card">Rigid bodies, forces, and energy</li>
+            <li class = "card">SPACE to bounce upwards</li>
+          </ul>
+        </div>
+        <div class = "flex-panel-buttons">
+          <a class = "src" href = "https://github.com/Hayden-Allen/Bounce">Source Code</a>
+          <a class = "run" href = "Tile.js-v4-master\index.html">Run</a>
+        </div>
+      </div>
+      <div class = "flex-panel">
+        <img src = "thumbnails/Sprite-Editor.png"></img>
+        <div class = "flex-panel-text">
+          <h3>Sprite Editor</h3>
+          <ul>
+            <li class = "card">Pixelated texture creation tool</li>
+            <li class = "card">Automatic color and alpha variance for more realistic looking sprites</li>
+            <li class = "card">F to fill, C to copy, Z to undo, Y to redo, ` to save, LEFT CLICK to draw, RIGHT CLICK to erase</li>
+          </ul>
+        </div>
+        <div class = "flex-panel-buttons">
+          <a class = "src" href = "https://github.com/Hayden-Allen/Sprite-Editor">Source Code</a>
+          <a class = "run" href = "Tile.js-v4-master\index.html">Run</a>
+        </div>
+      </div>
+
+      <div class = "flex-panel">
+        <img src = "thumbnails/Pong.png"></img>
+        <div class = "flex-panel-text">
+          <h3>Pong</h3>
+          <ul>
+            <li class = "card">Momentum-based Pong clone</li>
+            <li class = "card">x- and y-axis paddle movement</li>
+            <li class = "card">WASD to move left player, arrow keys to move right player</li>
+          </ul>
+        </div>
+        <div class = "flex-panel-buttons">
+          <a class = "src" href = "https://github.com/Hayden-Allen/Pong">Source Code</a>
+          <a class = "run" href = "Tile.js-v4-master\index.html">Run</a>
+        </div>
+      </div>
+      <div class = "flex-panel">
+        <img src = "thumbnails/Linear-Algebra.png"></img>
+        <div class = "flex-panel-text">
+          <h3>3D Graphics</h3>
+          <ul>
+            <li class = "card">Linear algebra without using a library</li>
+            <li class = "card">AD to move along x-axis, WS to move along y-axis, RF to move along z-axis</li>
+            <li class = "card">QE to rotate about x-axis, TY to rotate about y-axis, GH to rotate about z-axis</li>
+          </ul>
+        </div>
+        <div class = "flex-panel-buttons">
+          <a class = "src" href = "https://github.com/Hayden-Allen/Linear-Algebra">Source Code</a>
+          <a class = "run" href = "Tile.js-v4-master\index.html">Run</a>
+        </div>
+      </div>
+      <div class = "flex-panel">
+        <img src = "thumbnails/Grid-Load.png"></img>
+        <div class = "flex-panel-text">
+          <h3>Grid Rendering</h3>
+          <ul>
+            <li class = "card">Proof of concept for Tile.js-v4</li>
+            <li class = "card">Radial grid rendering algorithm that acts as occlusion culling</li>
+            <li class = "card">WASD to move</li>
+          </ul>
+        </div>
+        <div class = "flex-panel-buttons">
+          <a class = "src" href = "https://github.com/Hayden-Allen/Grid-Load">Source Code</a>
+          <a class = "run" href = "Tile.js-v4-master\index.html">Run</a>
+        </div>
+      </div>
+
+      <div class = "flex-panel">
+        <img src = "thumbnails/Tile.js-v3.png"></img>
+        <div class = "flex-panel-text">
+          <h3>Tile.js-v3</h3>
+          <ul>
+            <li class = "card">Buggy item testing</li>
+            <li class = "card">WASD to move, SPACE to use item, 1234QERFC to swap item, MOVE MOUSE to aim grappling hook, LEFT CLICK to grapple</li>
+          </ul>
+        </div>
+        <div class = "flex-panel-buttons">
+          <a class = "src" href = "https://github.com/Hayden-Allen/Tile.js-v3">Source Code</a>
+          <a class = "run" href = "Tile.js-v4-master\index.html">Run</a>
+        </div>
+      </div>
+      <div class = "flex-panel">
+        <img src = "thumbnails/Tile.js-v2.png"></img>
+        <div class = "flex-panel-text">
+          <h3>Tile.js-v2</h3>
+          <ul>
+            <li class = "card">Item and inventory testing</li>
+            <li class = "card">Hit the stone with the ball and chain to destroy it</li>
+            <li class = "card">WASD to move, SPACE to use item, 1234QERFC to swap item</li>
+          </ul>
+        </div>
+        <div class = "flex-panel-buttons">
+          <a class = "src" href = "https://github.com/Hayden-Allen/Tile.js-v2">Source Code</a>
+          <a class = "run" href = "Tile.js-v4-master\index.html">Run</a>
+        </div>
+      </div>
+      <div class = "flex-panel">
+        <img src = "thumbnails/Tile.js-v1.png"></img>
+        <div class = "flex-panel-text">
+          <h3>Tile.js-v1</h3>
+          <ul>
+            <li class = "card">Tile grid game proof of concept</li>
+            <li class = "card">Walk through doors to travel between rooms</li>
+            <li class = "card">WASD to move, SPACE to use sword</li>
+          </ul>
+        </div>
+        <div class = "flex-panel-buttons">
+          <a class = "src" href = "https://github.com/Hayden-Allen/Tile.js-v1">Source Code</a>
+          <a class = "run" href = "Tile.js-v4-master\index.html">Run</a>
+        </div>
+      </div>
+    </div>
+
+
+    <script type = "text/javascript">
+			banner.style.fontSize = "5vw";
+			banner.style.height = "5.8vw";
+			window.onscroll = function(e){
+				let size = Math.max(2, 5 - .02 * window.scrollY);
+        let height = Math.max(2.3, 5.8 - .024 * window.scrollY);
+				let banner = document.getElementById("banner");
+				banner.style.fontSize = size + "vw";
+				banner.style.height = height + "vw";
+			}
+		</script>
+  </body>
+</html>
